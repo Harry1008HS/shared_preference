@@ -39,19 +39,19 @@ public class WelcomePage extends AppCompatActivity {
 
         // java Code 
         
-         final Timer t=new Timer();
-        TimerTask tt= new TimerTask() {
-            @Override
-            public void run() {
-                count++;
-                progressBar.setProgress(count);
-                if (count == 100)
-                {
-                    t.cancel();
-                }
-            }
-        };
-        t.schedule(tt,0,100);
+        //  final Timer t=new Timer();
+        // TimerTask tt= new TimerTask() {
+        //     @Override
+        //     public void run() {
+        //         count++;
+        //         progressBar.setProgress(count);
+        //         if (count == 100)
+        //         {
+        //             t.cancel();
+        //         }
+        //     }
+        // };
+        // t.schedule(tt,0,100);
  
 
         progressDialog=new ProgressDialog(this);
