@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 public class WelcomePage extends AppCompatActivity {
 
+    int cout =0;
+    
     WebView webView;
     ProgressDialog progressDialog;
     @SuppressLint("MissingInflatedId")
@@ -25,6 +27,16 @@ public class WelcomePage extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_page);
 
         webView=findViewById(R.id.webview);
+
+        // Progress bar xmlfile
+        
+      //   <ProgressBar
+      // android:id="@+id/determinateBar"
+      // style="@android:style/Widget.ProgressBar.Horizontal"
+      // android:layout_width="wrap_content"
+      // android:layout_height="wrap_content"
+      // android:progress="25"/>
+ 
 
         progressDialog=new ProgressDialog(this);
         webView.loadUrl("https://strands.com/");
