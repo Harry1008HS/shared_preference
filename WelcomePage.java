@@ -36,6 +36,22 @@ public class WelcomePage extends AppCompatActivity {
       // android:layout_width="wrap_content"
       // android:layout_height="wrap_content"
       // android:progress="25"/>
+
+        // java Code 
+        
+         final Timer t=new Timer();
+        TimerTask tt= new TimerTask() {
+            @Override
+            public void run() {
+                count++;
+                progressBar.setProgress(count);
+                if (count == 100)
+                {
+                    t.cancel();
+                }
+            }
+        };
+        t.schedule(tt,0,100);
  
 
         progressDialog=new ProgressDialog(this);
